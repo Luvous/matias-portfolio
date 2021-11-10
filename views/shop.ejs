@@ -1,0 +1,69 @@
+<%- include('partials/top-html') -%>
+<%- include('partials/navbar') -%>
+<%- include('partials/navbar-mob') -%>
+
+<!-- <div class="container">
+  <div class="shop-sections">
+    <div class="draw-section">
+    </div>
+    <div class="merch-section">
+    </div>
+  </div> -->
+
+  <div class="fullscreen">
+    <div class="shop-card">
+      <img src="" alt="">
+      <div class="shop-item-info">
+        <span class="iconify cross-shop" data-icon="radix-icons:cross-circled" data-width="35" data-height="35"></span>
+        <h2>Remera</h2>
+        <p class="shop-item-size">10 x 20cm</p>
+        <p class="shop-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" target="_blank"><div class="flashcookie-link"><p>COMPRAR EN FLASHCOOKIE</p></div></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="shop-products">
+    <ul>
+      <%products.forEach(function(product,index){%>
+        <li class="li-shop">
+          <img src="<%-product.img%>" alt="">
+          <p style="display:hidden"><%-product.title%></p>
+          <p style="display:hidden"><%-product.description%></p>
+          <p style="display:hidden"><%-product.body%></p>
+          <p style="display:hidden"><%-product.flashcookieLink%></p>
+        </li>
+      <%})%>
+      <li class="li-shop">
+        <img src="https://images.pexels.com/photos/5560208/pexels-photo-5560208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+      </li>
+      <li class="li-shop">
+        <img src="https://images.pexels.com/photos/7109112/pexels-photo-7109112.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+      </li>
+      <li class="li-shop">
+        <img src="https://images.pexels.com/photos/7109115/pexels-photo-7109115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+      </li>
+      <li class="li-shop">
+        <img src="https://images.pexels.com/photos/5935745/pexels-photo-5935745.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+      </li>
+      <li class="li-shop">
+        <img src="https://images.pexels.com/photos/7109113/pexels-photo-7109113.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+      </li>
+      <li class="li-shop">
+        <img src="https://images.pexels.com/photos/7109115/pexels-photo-7109115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+      </li>
+      <li class="li-shop">
+        <img src="https://images.pexels.com/photos/5909881/pexels-photo-5909881.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+      </li>
+      <li class="li-shop">
+        <img src="https://images.pexels.com/photos/1389428/pexels-photo-1389428.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+      </li>
+      <li></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<%- include('partials/bot-html') -%>

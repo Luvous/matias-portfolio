@@ -1,0 +1,26 @@
+<div class="nav-mob">
+  <a href="/">
+    <div class="name-icon-nav">
+      <h1>M</h1>
+      <h1>V</h1>
+    </div>
+  </a>
+  <div class="undler">
+    <span class="iconify" data-icon="feather:menu" style="color: var(--blue);" data-width="40" data-height="40"></span>
+    <span class="iconify cross-navmob animatedBurger" data-icon="radix-icons:cross-circled" data-width="40" data-height="40" style="color: var(--blue)"></span>
+  </div>
+</div>
+<div class="nav-items-mob">
+  <div class="<%if(active=="contact"){%> active<%}else{%> nav-item<%}%>">
+    <%if(active=="contact"){%><h4>Contacto</h4><%}else{%><a href="/contact"><h4>Contacto</h4></a><%}%>
+  </div>
+  <div class="<%if(active=="blog"){%> active<%}else{%> nav-item<%}%>">
+    <%if(active=="blog"){%><h4>Blog</h4><%}else{%><a href="/blog"><h4>Blog</h4></a><%}%>
+  </div>
+  <div class="<%if(active=="portfolio"){%> active<%}else{%> nav-item<%}%>">
+    <%if(active=="portfolio"){%><h4>Portfolio</h4><%}else{%><a href="/portfolio"><h4>Portfolio</h4></a><%}%>
+  </div>
+  <div class="<%if(active=="shop"){%> active<%}else{%> nav-item<%}%>">
+    <%if(active=="shop"){%><h4>Tienda</h4><%}else{%><a href="/shop"><h4>Tienda</h4></a><%}%>
+  </div>
+</div>

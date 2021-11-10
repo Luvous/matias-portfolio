@@ -1,0 +1,16 @@
+<%- include('partials/top-html') -%>
+<%- include('partials/navbar') -%>
+<%- include('partials/navbar-mob') -%>
+
+<div class="blogpost-container">
+  <div class="blogpost-img">
+    <img src="<%=img%>" alt="">
+  </div>
+  <div class="blogpost-main">
+    <h2><%=title%></h2>
+    <p><%=body%></p>
+  </div>
+  <a href="/blog" style="margin-bottom: 1%"><div class="cross-port" style="background:var(--blue)"><span class="iconify cross-shop" data-icon="radix-icons:cross-circled" data-width="35" data-height="35" style="color: var(--white)"></span></div></a>
+</div>
+
+<%- include('partials/bot-html') -%>

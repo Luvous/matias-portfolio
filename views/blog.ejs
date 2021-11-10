@@ -1,0 +1,25 @@
+<%- include('partials/top-html') -%>
+<%- include('partials/navbar') -%>
+<%- include('partials/navbar-mob') -%>
+
+<div class="posts-container">
+  <%posts.reverse().forEach(function(post, index){%>
+    <a href="/blog/<%-post.nLink%>">
+    <div class="post-card">
+      <div class="post-img" style="background: linear-gradient(0deg, rgb(4 178 217 / 40%), rgb(4 178 217 / 20%)), url(<%-post.img %>); background-position:center center; background-size: cover; background-repeat: no-repeat" alt="img"> </div>
+      <div class="post-box">
+        <div class="post-text">
+          <h2><%-post.title%></h2>
+          <p><%-post.description.substring(0,60)%>...</p>
+        </div>
+        <div class="post-date">
+          <h3>#<%-(posts.length)-index%></h3>
+          <h3><%-post.date%></h3>
+        </div>
+      </div>
+    </div>
+    </a>
+  <%})%>
+</div>
+
+<%- include('partials/bot-html') -%>

@@ -1,0 +1,38 @@
+<%if(roller=="admin-dash"){%><img class="right-arrow" src="/images/polygon.svg" alt=""><%}else{%><img class="right-arrow" src="images/polygon.svg" alt=""><%}%>
+
+<%if(roller=="admin-dash"){%><img class="pullout" src="/images/polygon-out.svg" alt=""><%}else{%><img class="pullout" src="images/polygon-out.svg" alt=""><%}%>
+<div class="nav">
+  <div class="<%if(active=="contact"){%> active<%}else{%> nav-item<%}%>">
+    <%if(active=="contact"){%><span class="iconify" data-icon="bx:bxs-message" style="color: #04b2d9;" data-width="50" data-height="50"></span><%}else{%><a href="/contact"><span class="iconify" data-icon="bx:bxs-message" style="color: #04b2d9;" data-width="50" data-height="50"></span></a><%}%>
+    <%if(active=="contact"){%><h4>Contacto</h4><%}else{%><a href="/contact"><h4>Contacto</h4></a><%}%>
+  </div>
+  <div class="<%if(active=="blog"){%> active<%}else{%> nav-item<%}%>">
+    <%if(active=="blog"){%><span class="iconify" data-icon="gg-feed" style="color: #04b2d9;" data-width="50" data-height="50"></span><%}else{%><a href="/blog"><span class="iconify" data-icon="gg-feed" style="color: #04b2d9;" data-width="50" data-height="50"></span></a><%}%>
+    <%if(active=="blog"){%><h4>Blog</h4><%}else{%><a href="/blog"><h4>Blog</h4></a><%}%>
+  </div>
+  <div class="<%if(active=="portfolio"){%> active<%}else{%> nav-item<%}%>">
+    <%if(active=="portfolio"){%><span class="iconify" data-icon="dashicons:portfolio" style="color: #04b2d9;" data-width="50" data-height="50"></span><%}else{%><a href="/portfolio"><span class="iconify" data-icon="dashicons:portfolio" style="color: #04b2d9;" data-width="50" data-height="50"></span></a><%}%>
+    <%if(active=="portfolio"){%><h4>Portfolio</h4><%}else{%><a href="/portfolio"><h4>Portfolio</h4></a><%}%>
+  </div>
+  <div class="<%if(active=="shop"){%> active<%}else{%> nav-item<%}%>">
+    <%if(active=="shop"){%><span class="iconify" data-icon="bx:bxs-shopping-bags" style="color: #04b2d9;" data-width="50" data-height="50"></span><%}else{%><a href="/shop"><span class="iconify" data-icon="bx:bxs-shopping-bags" style="color: #04b2d9;" data-width="50" data-height="50"></span></a><%}%>
+    <%if(active=="shop"){%><h4>Tienda</h4><%}else{%><a href="/shop"><h4>Tienda</h4></a><%}%>
+  </div>
+</div>
+<div class="gohome">
+  <a href="/"><span class="iconify" data-icon="el:home-alt" style="color: #f2f2f2;" data-width="75" data-height="75"></span></a>
+</div>
+<div class="pagetitle">
+  <%if(active=="contact"){%><h2>CONTACTO</h2><%}%>
+  <%if(active=="blog" || active=="post"){%><h2>BLOG</h2><%}%>
+  <%if(active=="post"){%><p><%-date%></p><%}%>
+  <%if(active=="portfolio"){%><h2>PORTFOLIO</h2><%}%>
+  <%if(active=="shop"){%><h2>TIENDA</h2><%}%>
+
+  <%if(active=="nAdmin"){%><h2>Admin</h2><%}%>
+  <%if(active=="remove-blog"){%><h2>Borrar/Blog</h2><%}%>
+  <%if(active=="remove-item"){%><h2>Borrar/Portfolio</h2><%}%>
+  <%if(active=="remove-product"){%><h2>Borrar/Tienda</h2><%}%>
+  <%if(active=="nCompose"){%><h2>Nuevo Post</h2><%}%>
+
+</div>

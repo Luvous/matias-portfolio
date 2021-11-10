@@ -1,0 +1,43 @@
+<%- include('partials/top-html') -%>
+<%- include('partials/navbar') -%>
+<%- include('partials/navbar-mob') -%>
+
+<div class="cont-contact">
+  <div class="col-left lg-order">
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h5>
+    <div class="contact-icons">
+      <span class="iconify" data-icon="icon-park-outline:facebook-one" style="color: #f2f2f2;" data-width="45" data-height="45"></span>
+      <span class="iconify" data-icon="icon-park-outline:instagram" style="color: #f2f2f2;" data-width="50" data-height="50"></span>
+      <span class="iconify" data-icon="icon-park-outline:twitter" style="color: #f2f2f2;" data-width="50" data-height="50"></span>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="form-background">
+      <form action="/signup" method="POST" class="contact-form">
+        <input class="form-input" type="text" name="firstname" id="firstname" placeholder="Nombre"/>
+        <div class="form-subgroup">
+              <input class="form-input" type="text" name="subject" id="subject" placeholder="Asunto"/>
+              <input class="form-input" type="text" name="email" id="email" placeholder="Correo Electrónico"/>
+        </div>
+            <textarea class="form-input" type="text" name="message" id="lastname"></textarea>
+        <input type="submit" class="button-submit" value="ENVIAR"/>
+        </form>
+    </div>
+  </div>
+
+  <div class="col-left sm-order">
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h5>
+    <div class="contact-icons">
+      <span class="iconify" data-icon="icon-park-outline:facebook-one" style="color: #f2f2f2;" data-width="45" data-height="45"></span>
+      <span class="iconify" data-icon="icon-park-outline:instagram" style="color: #f2f2f2;" data-width="50" data-height="50"></span>
+      <span class="iconify" data-icon="icon-park-outline:twitter" style="color: #f2f2f2;" data-width="50" data-height="50"></span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<%- include('partials/bot-html') -%>

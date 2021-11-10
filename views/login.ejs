@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>LogIn</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,700&family=Rakkas&family=Ranchers&family=Ranga:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+  <form class="login-form" action="/login" method="post">
+    <div class="title">
+      <h3 class="login-title">Sign-In</h3>
+    </div>
+    <div class="field">
+      <input placeholder="Username" type="text" name="username">
+      <br>
+    </div>
+    <div class="field">
+      <input placeholder="Password" type="password" name="password" required />
+    </div>
+    <div class="field">
+      <input class="submit-btn" type="submit" value="SUBMIT" required />
+    </div>
+    <label id="error-message"></label>
+  </form>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const info = urlParams.get('info');
+
+    if(info) {
+      const errorMessage = document.getElementById("error-message");
+      errorMessage.innerText = 'Usuario o contraseña incorrectos';
+      errorMessage.style.display = "block";
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/animations.js" charset="utf-8"></script>
+</body>
+
+</html>

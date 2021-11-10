@@ -1,0 +1,63 @@
+<%- include('partials/top-html') %>
+<%- include('partials/navbar') %>
+
+<div class="remove-container" <%if(active=="remove-post"){%>style="display: flex; flex-direction:column; align-items:center"<%}%>>
+
+  <!--Remove posts in blog -->
+  <%if(active=="remove-post"){%>
+    <%posts.reverse().forEach(function(post, index){%>
+      <form action="/nAdmin/nDeletePost" method="post" style="display: flex; align-items: center;">
+        <label for="checkbox<%=post._id%>"><span class="iconify" data-icon="bi:trash-fill" style="color: orangered;" data-width="40" data-height="40"></span></label>
+        <input style="opacity: 0" type="checkbox" id="checkbox<%=post._id%>" name="checkbox" value="<%=post._id%>" onchange="this.form.submit()">
+
+        <div class="post-card" style="pointer-events: none;">
+          <div class="post-img" style="background: linear-gradient(0deg, rgb(4 178 217 / 40%), rgb(4 178 217 / 20%)), url(<%-post.img %>); background-position:center center; background-size: cover; background-repeat: no-repeat" alt="img"> </div>
+          <div class="post-box">
+            <div class="post-text">
+              <h2><%-post.title%></h2>
+              <p><%-post.description.substring(0,60)%>...</p>
+            </div>
+            <div class="post-date">
+              <h3>#<%-(posts.length)-index%></h3>
+              <h3><%-post.date%></h3>
+            </div>
+          </div>
+        </div>
+      </form>
+    <%})%>
+  <%}%>
+
+
+  <!--Remove products in shop -->
+  <%if(active=="remove-product"){%>
+    <%products.reverse().forEach(function(product,index){ %>
+      <form class="remove-form" action="/nAdmin/nDeleteProduct" method="post">
+        <h2><%=product.title%></h2>
+
+        <img class="remove-image" src="<%=product.img%>" alt="">
+
+        <label for="checkbox<%=product._id%>"><span class="iconify" data-icon="bi:trash-fill" style="color: orangered;" data-width="40" data-height="40"></span></label>
+        <input style="opacity: 0" type="checkbox" id="checkbox<%=product._id%>" name="checkbox" value="<%=product._id%>" onchange="this.form.submit()">
+      </form>
+    <%})%>
+  <%}%>
+
+  <!--Remove items in portfolio -->
+  <%if(active=="remove-item"){%>
+    <ul>
+      <%items.forEach(function(item,index){%>
+        <form action="/nAdmin/nDeleteItem" method="post">
+          <li class="li-portfolio" style="display: flex; justify-content: center; align-items: center">
+            <label for="checkbox<%=item._id%>" style="position: absolute; z-index: 5;"><span class="iconify" data-icon="bi:trash-fill" style="color: black; filter: drop-shadow(0 0 7px white)" data-width="60" data-height="60"></span></label>
+            <input style="opacity: 0" type="checkbox" id="checkbox<%=item._id%>" name="checkbox" value="<%=item._id%>" onchange="this.form.submit()">
+            <img style="filter: grayscale(50%) blur(2px);" src="<%-item.img%>" alt="Portfolio drawing">
+          </li>
+        </form>
+      <%})%>
+    </ul>
+  <%}%>
+
+</div>
+
+
+<%- include('partials/bot-html') %>

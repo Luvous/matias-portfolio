@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <%if(active=="contact"){%><title>Contacto | Matias Varela</title><%}%>
+  <%if(active=="blog"){%><title>Blog | Matias Varela</title><%}%>
+  <%if(active=="portfolio"){%><title>Portfolio | Matias Varela</title><%}%>
+  <%if(active=="shop"){%><title>Tienda | Matias Varela</title><%}%>
+
+  <%if(active=="nCompose"){%><title>New Post | Matias Varela</title><%}%>
+  <%if(active=="nAdmin"){%><title>Admin | Matias Varela</title><%}%>
+  <%if(active=="post"){%><title> <%-title%> | Matias Varela</title><%}%>
+
+  <%if(active=="remove-blog"){%><title> Delete Post | Matias Varela</title><%}%>
+
+  <link rel="icon" href="/images/mv.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,700&family=Rakkas&family=Ranchers&family=Ranga:wght@700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+  <!-- Styles -->
+  <%if(roller=="admin-dash" || active=="post"){%><link rel="stylesheet" href="/css/master.css"><%}else{%><link rel="stylesheet" href="css/master.css"><%}%>
+
+</head>
+
+<body <%if(roller=="admin-dash" && active!="post"){%> style="background:#000000"<%}%> style="overflow-y:scroll">

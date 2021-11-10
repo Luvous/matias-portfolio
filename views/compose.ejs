@@ -1,0 +1,27 @@
+<%- include('partials/top-html') %>
+<%- include('partials/navbar') %>
+
+<br>
+<form class="admin-container" action="<%if (edit=="blog"){%>/nAdmin/nNewPost<%}else if (edit=="store"){%>/nAdmin/nNewProduct<%} else if (edit=="portfolio"){%>/nAdmin/nNewItem<%}%>" enctype="multipart/form-data"  method="post">
+  <div class="admin-form-img">
+    <label for="file-upload" class="custom-file-upload">IMAGEN PRINCIPAL</label>
+    <input style="opacity: 0; position: absolute; width: 1px; height: 1px; top: 20vh;" type="file" accept="image/jpeg" name="image" id="file-upload" required>
+  </div>
+
+
+
+  <%if (edit=="store" || edit=="blog") {%><input type="text" class="input-admin" name="postTitle" placeholder="Título" required autocomplete="off"><%}%>
+
+  <%if (edit=="store" || edit=="blog") {%><input type="text" class="input-admin" name="postPreview" placeholder="Descripción" required maxlength="60" autocomplete="off"><%}%>
+
+  <%if (edit=="store" || edit=="blog") {%><textarea class="body-admin" name="postBody" rows="10" cols="80" id="postBody" required placeholder="Cuerpo del post"></textarea><%}%>
+  <%if (edit=="store"){%><input type="url" class="input-admin" name="flashLink" autocomplete="off"required placeholder="Link del producto en Flashcookie"><br><br><br><br><br><br><%}%>
+  <br>
+
+
+  <button class="publish-btn" type="submit" name="button">Publish</button>
+</form>
+
+
+
+<%- include('partials/bot-html') %>
