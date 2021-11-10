@@ -3,9 +3,9 @@ This is a website that I made for my brother, a comicbook artist.
 
 ## 🎈 Main Goal 🎈
 The main goal was to have a way of showing some of the artist work, his drawings. And with a contact page for potential writters looking for an artist.<br>
-But we also wanted to make an few steps forward, maybe a website with room for some fans, a place where people could read about their favorite comicbook artist,<br>
+But we also wanted to make an few steps forward, maybe a website with room for some fans, a place where people could read about their favorite comicbook artist,
 a place to buy merch and maybe more.<br>
-We needed a good but clean design, with animations so we could communicate the artist personality.
+We needed a good and clean design, with animations so we could communicate the artist personality.
 
 
 
