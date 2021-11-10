@@ -25,8 +25,8 @@ For security, I used passport.js for authentication in the admin dashboard.
 
 
 ## 🧱 Components 🧱
--HTML & CSS
--Jquery
--EJS
--Node.js & Express
--MongoDB & Mongoose
+* HTML & CSS
+* Jquery
+* EJS
+* Node.js & Express
+* MongoDB & Mongoose
