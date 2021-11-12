@@ -69,34 +69,6 @@ app.use(passport.session());
 // UserDetails.register({username:'<ADMINUSERNAME>', active: false}, '<ADMINPASSWORD>');
 // YOU DON'T WANT TO SHOW THIS, DELETE OR CHANGE PARAMETERS, DO NOT LET THE USERNAME OR PASSWORD
 
-/* ROUTES */
-
-
-app.post('/login', (req, res, next) => {
-  passport.authenticate('local',
-  (err, user, info) => {
-    if (err) {
-      return next(err);
-    }
-    if (!user) {
-      return res.redirect('/login?info=' + _.kebabCase(info));
-    }
-    req.logIn(user, function(err) {
-      if (err) {
-        return next(err);
-      }
-      return res.redirect('/nAdmin');
-    });
-
-  })(req, res, next);
-});
-
-app.get('/login',
-  (req, res) => res.render('login')
-);
-
-
-
 
 // --------------------------------------------------------------------------
 
@@ -146,6 +118,31 @@ app.get('/contact', function(req, res){
 app.get('/nAdmin', connectEnsureLogin.ensureLoggedIn(), function(req,res){
     res.render('nAdmin', {active:"nAdmin", roller:"admin-dash"});
 })
+
+
+app.post('/login', (req, res, next) => {
+  passport.authenticate('local',
+  (err, user, info) => {
+    if (err) {
+      return next(err);
+    }
+    if (!user) {
+      return res.redirect('/login?info=' + _.kebabCase(info));
+    }
+    req.logIn(user, function(err) {
+      if (err) {
+        return next(err);
+      }
+      return res.redirect('/nAdmin');
+    });
+
+  })(req, res, next);
+});
+
+app.get('/login',
+  (req, res) => res.render('login')
+);
+
 
 // Blog and posts -------------------------------------------------------------
 
