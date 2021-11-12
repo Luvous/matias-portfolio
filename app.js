@@ -101,7 +101,7 @@ app.get('/login',
 // --------------------------------------------------------------------------
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://admin-tom:1m4n4dm1n@mvarela.002nw.mongodb.net/mvportfolio');
+mongoose.connect(process.env.mongodb_database);
 
 // Posts Schema
 const postSchema = {
