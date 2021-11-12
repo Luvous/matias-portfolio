@@ -52,6 +52,8 @@ const expressSession = require('express-session')({
   saveUninitialized: false
 });
 
+
+
 /* PASSPORT LOCAL AUTHENTICATION -----------------------------------------*/
 
 passport.use(UserDetails.createStrategy());
@@ -63,12 +65,11 @@ app.use(expressSession);
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-// -------------------------------------------------------------------------
-
+// CREATES A NEW ADMIN
+// UserDetails.register({username:'<ADMINUSERNAME>', active: false}, '<ADMINPASSWORD>');
+// YOU DON'T WANT TO SHOW THIS, DELETE OR CHANGE PARAMETERS, DO NOT LET THE USERNAME OR PASSWORD
 
 /* ROUTES */
-
 
 
 app.post('/login', (req, res, next) => {
@@ -100,7 +101,7 @@ app.get('/login',
 // --------------------------------------------------------------------------
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/matiasDB');
+mongoose.connect('mongodb+srv://admin-tom:1m4n4dm1n@mvarela.002nw.mongodb.net/mvportfolio');
 
 // Posts Schema
 const postSchema = {
