@@ -1,7 +1,7 @@
 # 📖 Matias Varela - Comicbook Artist Portfolio 📖
 This is a website that I made for my brother, a comicbook artist.
 
-![presentation_image](https://res.cloudinary.com/tomhugin0000/image/upload/v1636768690/MatiasVarela/Presentaci%C3%B3n_Matias_ylr4ip.png)
+![presentation_image](https://res.cloudinary.com/tomhugin0000/image/upload/v1636768870/MatiasVarela/Presentaci%C3%B3n_Matias_ylr4ip.png)
 
 ## 🎈 Main Goal 🎈
 The main goal was to have a way of showing some of the artist work, his drawings. And with a contact page for potential writters looking for an artist.<br>
