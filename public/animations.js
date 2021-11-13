@@ -55,7 +55,7 @@ $(document).ready(function() {
       $('body').css('overflow-y', 'hidden')
     }
   });
-  
+
   $('.pullout').click(function() {
     $('.nav').stop().animate({
       left: '-100vw'
