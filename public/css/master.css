@@ -372,6 +372,10 @@ h1:nth-child(2n){
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
 }
 
+.newsletter-sm{
+  display: none;
+}
+
 .left-nw{
   display: flex;
   flex-direction: column;
@@ -1223,7 +1227,7 @@ input[name="subject"] {
 @media only screen and (max-width: 677px) {
 
   body{
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: auto;
     margin: 0;
   }
@@ -1486,13 +1490,13 @@ input[name="subject"] {
   }
 
   .fullscreen{
-    top: 20vh;
+    top: 15vh;
   }
 
   /* Blog */
 
   .posts-container{
-    top: 20vh;
+    top: 15vh;
   }
 
   .post-card{
@@ -1501,31 +1505,42 @@ input[name="subject"] {
   }
 
   .post-box h3{
-    font-size: 1.5rem;
+    font-size: 1.15rem;
   }
 
   .post-box h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .post-box p{
-    font-size: 1rem;
+    font-size: .85rem;
   }
 
   .post-img{
-    filter: blur(3px);
+    filter: blur(1px);
     transform: scale(1.6);
   }
 
   .post-card:hover .post-img{
-    filter: blur(1px);
-    transform: scale(2);
+    filter: blur(.5px);
+    transform: scale(1.8);
   }
 
   /* Blog post */
+  .blogpost-main{
+    width: 95%;
+  }
+
+  .blogpost-main h2{
+    font-size: 2rem;
+  }
+
+  .blogpost-main p{
+    font-size: 1.4rem;
+  }
 
   .blogpost-container{
-    margin: 25vh 0 5vh;
+    margin: 10vh 0 0;
     width: 100%;
     border-radius: 0;
   }

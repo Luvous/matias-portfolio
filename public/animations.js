@@ -53,6 +53,7 @@ $(document).ready(function() {
     },250);
     if ($(window).width() < 640){
       $('body').css('overflow-y', 'hidden')
+      $('body').css('overflow-x', 'hidden')
     }
   });
 
@@ -72,28 +73,33 @@ $(document).ready(function() {
     },300);
     if ($(window).width() < 640){
       $('body').css('overflow-y', 'auto')
+      $('body').css('overflow-x', 'hidden')
     }
   });
 
   $('li img').click(function(){
+    if ($(window).width() < 640){
+      $('ul').css('padding-top', '20vh')
+    }
+
     $('li').stop().animate({
       height: '20vh'
     },420)
     linkVar = event.path[0].currentSrc;
 
-    $('.shop-card').animate({
+    $('.shop-card').stop().animate({
       opacity: '100%',
       height: '70vh'
     },200)
 
     window.scrollTo({top: 70, behavior: 'smooth'});
 
-    $('.fullscreen').animate({
+    $('.fullscreen').stop().animate({
       height: '100%',
       opacity: '100%'
     },200)
 
-    $('.fullscreen img').animate({
+    $('.fullscreen img').stop().animate({
       height: '100%',
       opacity: '100%'
     },300)
@@ -111,6 +117,10 @@ $(document).ready(function() {
   })
 
   $('.cross-port').click(function(){
+    if ($(window).width() < 640){
+      $('ul').css('padding-top', '10vh')
+    }
+
     $('li').stop().animate({
       height: '40vh'
     },350)
