@@ -216,15 +216,13 @@ $(document).ready(function() {
   })
 
 
-
-
-
-
-
-
-
-
-
+  if ($(window).width() < 640){
+    if (window.location.href == 'http://localhost:3000/' || window.location.href == 'https://matias-varela.herokuapp.com/'){
+      console.log(document.location.href);
+      $('body').css('background', 'var(--white)')
+      $('.main-section').css('background', 'var(--blue)')
+    }
+  }
 
 
 

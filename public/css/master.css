@@ -1251,6 +1251,11 @@ input[name="subject"] {
     font-size: 1.5rem;
   }
 
+  .main-section{
+    background: var(--blue);
+    height: 100vh;
+  }
+
   .pagetitle{
     display: none;
   }
@@ -1267,7 +1272,7 @@ input[name="subject"] {
     background: var(--white);
     position: relative;
     top: 10vh;
-    height: 100vh;
+    height: 125vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1390,9 +1395,10 @@ input[name="subject"] {
   }
 
   .question-sm{
+    height: 75%;
     position: absolute;
-    left: 1rem;
-    top: .5rem;
+    left: .5rem;
+    top: .3rem;
     animation-name: twistQuestion;
     animation-iteration-count: infinite;
     animation-duration: 6s;
