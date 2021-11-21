@@ -8,6 +8,7 @@
   <%if(active=="blog"){%><title>Blog | Matias Varela</title><%}%>
   <%if(active=="portfolio"){%><title>Portfolio | Matias Varela</title><%}%>
   <%if(active=="shop"){%><title>Tienda | Matias Varela</title><%}%>
+  <%if(active=="about"){%><title>About | Matias Varela</title><%}%>
 
   <%if(active=="nCompose"){%><title>New Post | Matias Varela</title><%}%>
   <%if(active=="nAdmin"){%><title>Admin | Matias Varela</title><%}%>
@@ -28,4 +29,4 @@
 
 </head>
 
-<body <%if(roller=="admin-dash" && active!="post"){%> style="background:#000000"<%}%> style="overflow-y:auto">
+<body <%if(roller=="admin-dash" && active!="post"){%> style="background:#000000"<%}%>   <%if(active=="about"){%>style="overflow-y:hidden"<%}else{%> style="overflow-y:auto"<%}%>>

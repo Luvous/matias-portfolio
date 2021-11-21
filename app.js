@@ -108,7 +108,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/about', function(req, res){
-  res.render('about', {active:"contact", roller:"none"});
+  res.render('about', {active:"about", roller:"none"});
 });
 
 app.get('/contact', function(req, res){

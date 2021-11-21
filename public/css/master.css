@@ -322,6 +322,34 @@ h1:nth-child(2n){
 
 }
 
+/* About */
+.container-title{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 8vw;
+}
+
+.fromabout{
+  left: 0;
+  top: 0;
+}
+
+.container-title h2{
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 4rem 0 0;
+}
+
+.about-col{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-svg{
+  width: 32rem;
+}
+
 
 /*------------------------- Newsletter Pop -------------------- */
 
