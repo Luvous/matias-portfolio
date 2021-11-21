@@ -14,13 +14,20 @@
 
   <div class="col">
     <div class="form-background">
-      <form action="/signup" method="POST" class="contact-form">
-        <input class="form-input" type="text" name="firstname" id="firstname" placeholder="Nombre"/>
+      <form action="https://formsubmit.co/393b9854eb2ae4ec55eb00ee8d291e5b" method="POST" class="contact-form">
+        <input class="form-input" type="text" name="Name" id="firstname" placeholder="Nombre"/>
         <div class="form-subgroup">
-              <input class="form-input" type="text" name="subject" id="subject" placeholder="Asunto"/>
-              <input class="form-input" type="text" name="email" id="email" placeholder="Correo Electrónico"/>
+          <input class="form-input" type="text" name="Subject" id="subject" placeholder="Asunto"/>
+          <input class="form-input" type="text" name="E-mail" id="email" placeholder="Correo Electrónico"/>
         </div>
-            <textarea class="form-input" type="text" name="message" id="lastname"></textarea>
+        <textarea class="form-input" type="text" name="Message" id="lastname"></textarea>
+        <!-- Form Specs -->
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://localhost:3000/">
+        <input type="text" name="_honey" style="display:none">
+
         <input type="submit" class="button-submit" value="ENVIAR"/>
         </form>
     </div>
@@ -35,7 +42,6 @@
     </div>
   </div>
 </div>
-
 
 
 

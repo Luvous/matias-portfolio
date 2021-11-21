@@ -734,12 +734,12 @@ input:-webkit-autofill:focus {
     -webkit-text-fill-color: #333;
 }
 
-input[name="email"] {
+input[name="E-mail"] {
   width: 95%;
   margin: 5px;
 }
 
-input[name="subject"] {
+input[name="Subject"] {
   width: 40%;
   margin: 5px;
 }
