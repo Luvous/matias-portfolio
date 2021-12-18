@@ -1,5 +1,7 @@
 # [Matias Varela - Comicbook Artist Portfolio](https://matias-varela.herokuapp.com/)
-This is a website that I made for my brother, a comicbook artist.
+This is a website that I made for my brother, a comicbook artist.<br>
+MEEN Stack
+
 
 ![presentation_image](https://res.cloudinary.com/tomhugin0000/image/upload/v1636768870/MatiasVarela/Presentaci%C3%B3n_Matias_ylr4ip.png)
 
@@ -20,10 +22,10 @@ Then, I made simple animations with jQuery.
 
 In terms of backend, I wanted a database and an easy way to let the client upload and manage the website, so I needed to build a dashboard, with authentication for security.<br>
 The backend uses Node.js with Express.<br>
-Before connecting a database, I made the dashboard, and for images I use the node package called multer, I used local storage for testing.<br>
-When everything was finished, I connected the MongoDB (with mongoose) database, then I added the cloudinary API and updated multer to use the multer-cloudinary package, so images
+Before connecting a database, I made the dashboard.<br>
+When everything was finished, I connected the MongoDB database, then I implemented the cloudinary API, so images
 went to cloudinary.<br>
-For security, I used passport.js for authentication in the admin dashboard.
+I used passport.js for authentication in the admin dashboard.
 
 
 
@@ -32,4 +34,4 @@ For security, I used passport.js for authentication in the admin dashboard.
 * jQuery
 * EJS
 * Node.js & Express
-* MongoDB & Mongoose
+* MongoDB Atlas and Mongoose
